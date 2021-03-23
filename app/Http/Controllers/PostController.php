@@ -10,14 +10,12 @@ class PostController extends Controller
     public function getPosts()
     {
         $posts = new Post();
-//        return $post->getPosts();
         return view('showPosts')->with('posts', $posts->getPosts());
     }
 
     public function getMyPosts()
     {
         $posts = new Post();
-//        return $post->getMyPosts();
         return view('showPosts')->with('posts', $posts->getMyPosts());
     }
 
